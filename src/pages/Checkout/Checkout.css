@@ -1,0 +1,22 @@
+.ghe {
+  /* ghe thuong */
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px;
+  background-color: rgb(123, 122, 122);
+}
+
+.gheDaDat {
+  background-color: rgb(232, 76, 76);
+  cursor: no-drop;
+}
+
+.gheDangDat {
+  background-color: rgb(18, 176, 25) !important;
+}
+
+.gheVip {
+  background-color: rgb(228, 74, 8);
+}
