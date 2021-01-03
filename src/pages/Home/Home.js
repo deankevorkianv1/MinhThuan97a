@@ -25,8 +25,10 @@ export default function Home(props) {
     dispatch(action);
 
     dispatch(LayDanhSachCumRapAction());
-  }, []);
+  }, [])
 
+
+  
   return (
 
     <div>

@@ -1,0 +1,123 @@
+[debug] [2021-11-15T05:47:19.836Z] ----------------------------------------------------------------------
+[debug] [2021-11-15T05:47:19.839Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\minht\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-11-15T05:47:19.840Z] CLI Version:   9.22.0
+[debug] [2021-11-15T05:47:19.840Z] Platform:      win32
+[debug] [2021-11-15T05:47:19.840Z] Node Version:  v14.17.1
+[debug] [2021-11-15T05:47:19.841Z] Time:          Mon Nov 15 2021 12:47:19 GMT+0700 (Indochina Time)
+[debug] [2021-11-15T05:47:19.841Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-15T05:47:19.910Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-15T05:47:19.910Z] > authorizing via signed-in user (minhthuan97.vietnam@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\Cyber\bookingmovie
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using moviebooking-aa798. 
+[debug] [2021-11-15T05:49:45.563Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/moviebooking-aa798 [none]
+[debug] [2021-11-15T05:49:46.439Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/moviebooking-aa798 200
+[debug] [2021-11-15T05:49:46.440Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/moviebooking-aa798 {"projectId":"moviebooking-aa798","projectNumber":"205159804055","displayName":"MovieBooking","name":"projects/moviebooking-aa798","resources":{"hostingSite":"moviebooking-aa798","realtimeDatabaseInstance":"moviebooking-aa798-default-rtdb"},"state":"ACTIVE"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-11-15T05:49:46.447Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-15T05:49:46.448Z] > authorizing via signed-in user (minhthuan97.vietnam@gmail.com)
+[debug] [2021-11-15T05:49:46.448Z] [iam] checking project moviebooking-aa798 for permissions ["firebase.projects.get"]
+[debug] [2021-11-15T05:49:46.452Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-15T05:49:46.453Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-15T05:49:46.813Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 15 Nov 2021 05:49:46 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-15T05:49:46.847Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/moviebooking-aa798:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-11-15T05:49:48.039Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Nov 2021 05:49:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=821","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-15T05:49:48.044Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/moviebooking-aa798/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-11-15T05:49:48.047Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/moviebooking-aa798/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-11-15T05:49:49.398Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Nov 2021 05:49:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-15T05:49:49.787Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 15 Nov 2021 05:49:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-11-15T05:51:16.403Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-11-15T05:51:16.639Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-11-15T05:51:16.640Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.4.1","browserURL":"https://www.gstatic.com/firebasejs/9.4.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.4.1/firebase.tgz"},"live":{"version":"9.4","browserURL":"https://www.gstatic.com/firebasejs/live/9.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.4.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.4.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.4.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.4.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.4.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.4.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.4.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.4.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.4.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.4.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.4.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.4.1/firebase-firestore.memory.js"}}
+[info] +  Wrote y/index.html 
+[info] 
+[info] i  Detected a .git folder at G:\Cyber\bookingmovie 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=48987575&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-11-15T05:51:17.573Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"177177c7145ba066720a","redirect_uri":"http://localhost:9005","state":"48987575"}
+[debug] [2021-11-15T05:51:18.186Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 15 Nov 2021 05:51:18 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"b38ff933a41018bc6cf411c6ac9db3d5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"DC4D:0499:8BFFFE:AED301:6191F555"}
+[debug] [2021-11-15T05:51:18.196Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-11-15T05:51:18.766Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-11-15T05:51:18.767Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"MinhThuan97","id":81793512,"node_id":"MDQ6VXNlcjgxNzkzNTEy","avatar_url":"https://avatars.githubusercontent.com/u/81793512?v=4","gravatar_id":"","url":"https://api.github.com/users/MinhThuan97","html_url":"https://github.com/MinhThuan97","followers_url":"https://api.github.com/users/MinhThuan97/followers","following_url":"https://api.github.com/users/MinhThuan97/following{/other_user}","gists_url":"https://api.github.com/users/MinhThuan97/gists{/gist_id}","starred_url":"https://api.github.com/users/MinhThuan97/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MinhThuan97/subscriptions","organizations_url":"https://api.github.com/users/MinhThuan97/orgs","repos_url":"https://api.github.com/users/MinhThuan97/repos","events_url":"https://api.github.com/users/MinhThuan97/events{/privacy}","received_events_url":"https://api.github.com/users/MinhThuan97/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2021-04-02T04:59:23Z","updated_at":"2021-08-12T07:05:04Z","private_gists":0,"total_private_repos":9,"owned_private_repos":9,"disk_usage":11017,"collaborators":2,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as MinhThuan97 
+[info] 
+[debug] [2021-11-15T05:51:34.511Z] >>> [apiv2][query] GET https://api.github.com/repos/MinhThuan/BookingMovie97/actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:51:35.063Z] <<< [apiv2][status] GET https://api.github.com/repos/MinhThuan/BookingMovie97/actions/secrets/public-key 404
+[debug] [2021-11-15T05:51:35.063Z] <<< [apiv2][body] GET https://api.github.com/repos/MinhThuan/BookingMovie97/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-11-15T05:51:51.438Z] >>> [apiv2][query] GET https://api.github.com/repos/MinhThuan97/actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:51:51.864Z] <<< [apiv2][status] GET https://api.github.com/repos/MinhThuan97/actions/secrets/public-key 404
+[debug] [2021-11-15T05:51:51.865Z] <<< [apiv2][body] GET https://api.github.com/repos/MinhThuan97/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:25.008Z] >>> [apiv2][query] GET https://api.github.com/repos/MinhThuan97/Movie97/actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:25.517Z] <<< [apiv2][status] GET https://api.github.com/repos/MinhThuan97/Movie97/actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:25.518Z] <<< [apiv2][body] GET https://api.github.com/repos/MinhThuan97/Movie97/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-11-15T05:52:37.494Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:37.909Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:37.910Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:38.447Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:38.620Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:38.791Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:38.945Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:38.955Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:38.955Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:39.042Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:39.043Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:39.116Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:39.265Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:39.266Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:39.268Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:39.424Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:39.424Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:39.588Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:39.589Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:39.666Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:39.667Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-11-15T05:52:56.572Z] >>> [apiv2][query] GET https://api.github.com/repos/MinhThuan97/Movie97/actions/secrets/public-key type=owner
+[debug] [2021-11-15T05:52:57.063Z] <<< [apiv2][status] GET https://api.github.com/repos/MinhThuan97/Movie97/actions/secrets/public-key 404
+[debug] [2021-11-15T05:52:57.064Z] <<< [apiv2][body] GET https://api.github.com/repos/MinhThuan97/Movie97/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
